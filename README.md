@@ -1,4 +1,4 @@
-# cod4-server-cfg
+# cod4 server cfg
 
 Game: Call of Duty 4 
 
@@ -14,5 +14,6 @@ add you custom settings
 run :)
 
 
-contact:
+<b> contact: </b> <br />
+Install TeamSpeak3 client.  <br />
 ts3server://rileyghost.com
