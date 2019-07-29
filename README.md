@@ -17,6 +17,7 @@ sudo dpkg --add-architecture i386 <br />
 sudo apt-get update <br />
 sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 </br> </b>
 <b>
+ <br /> <br />
 chmod u+x start-server.sh <br />
 ./start-server.sh </b> <br />
 run :)
