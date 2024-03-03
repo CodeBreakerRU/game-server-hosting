@@ -18,5 +18,4 @@
 
 ```
 /rcon map mp_nuketown
-/rcon map mp_killhouse_2
 ```
