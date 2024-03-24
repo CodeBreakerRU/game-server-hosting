@@ -1,4 +1,4 @@
-# cod4 server cfg
+# Call of duty 4 modern warfare
 
 Game: <b>Call of Duty 4</b> 
 
