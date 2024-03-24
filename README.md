@@ -25,4 +25,4 @@ run :)
 
 <b> contact: </b> <br />
 Install TeamSpeak3 client.  <br />
-ts3server://rileyghost.com
+ts3server://blackwatch
