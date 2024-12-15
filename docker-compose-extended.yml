@@ -1,0 +1,56 @@
+services:
+  cod4-server-1:
+    image: docker.rileyghost.com/cod4x/base:latest
+    restart: unless-stopped
+    container_name: cod4-server-1
+    volumes:
+      - ./server.cfg:/home/cod4/main/server.cfg
+    ports:
+      - "28960:28960/udp"
+    environment:
+      FS_BASEPATH: "/home/cod4/"
+      FS_HOMEPATH: "/home/cod4/"
+      NET_PORT: "28960"
+      MAP: "mp_nuketown"
+      FS_GAME: "mods/pml220"
+      PROMOD_MODE: "knockout_mr12"
+      G_LOGSYNC: "2"
+    command: [
+      "+exec", "server.cfg",
+      "+set", "logfile", "2",
+      "+set", "fs_basepath", "/home/cod4/",
+      "+set", "fs_homepath", "/home/cod4/",
+      "+set", "net_port", "28960",
+      "+map", "mp_nuketown",
+      "+set", "fs_game", "mods/pml220",
+      "+set", "promod_mode", "knockout_mr12",
+      "+set", "g_logsync", "2"
+    ]
+
+  cod4-server-2:
+    image: docker.rileyghost.com/cod4x/base:latest
+    restart: unless-stopped
+    container_name: cod4-server-2
+    volumes:
+      - ./server.cfg:/home/cod4/main/server.cfg
+    ports:
+      - "28961:28960/udp"
+    environment:
+      FS_BASEPATH: "/home/cod4/"
+      FS_HOMEPATH: "/home/cod4/"
+      NET_PORT: "28960"
+      MAP: "mp_nuketown"
+      FS_GAME: "mods/pml220"
+      PROMOD_MODE: "knockout_mr12"
+      G_LOGSYNC: "2"
+    command: [
+      "+exec", "server.cfg",
+      "+set", "logfile", "2",
+      "+set", "fs_basepath", "/home/cod4/",
+      "+set", "fs_homepath", "/home/cod4/",
+      "+set", "net_port", "28960",
+      "+map", "mp_nuketown",
+      "+set", "fs_game", "mods/pml220",
+      "+set", "promod_mode", "knockout_mr12",
+      "+set", "g_logsync", "2"
+    ]
