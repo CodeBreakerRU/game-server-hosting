@@ -1,0 +1,191 @@
+.
+├── 1
+├── bin
+│   ├── cod4x18_dedrun
+│   ├── libgcc_s.so.1
+│   ├── libstdc++.so.6
+│   ├── steam_api.so
+│   └── steamclient.so
+├── Dockerfile
+├── file-structure.txt
+├── main
+│   ├── iw_00.iwd
+│   ├── iw_01.iwd
+│   ├── iw_02.iwd
+│   ├── iw_03.iwd
+│   ├── iw_04.iwd
+│   ├── iw_05.iwd
+│   ├── iw_06.iwd
+│   ├── iw_07.iwd
+│   ├── iw_08.iwd
+│   ├── iw_09.iwd
+│   ├── iw_10.iwd
+│   ├── iw_11.iwd
+│   ├── iw_12.iwd
+│   ├── iw_13.iwd
+│   ├── jcod4x_00.iwd
+│   ├── localized_english_iw00.iwd
+│   ├── localized_english_iw01.iwd
+│   ├── localized_english_iw02.iwd
+│   ├── localized_english_iw03.iwd
+│   ├── localized_english_iw04.iwd
+│   ├── localized_english_iw05.iwd
+│   ├── localized_english_iw06.iwd
+│   ├── server.cfg
+│   ├── video
+│   │   ├── ac130_fade.bik
+│   │   ├── ac130_load.bik
+│   │   ├── Aftermath_fade.bik
+│   │   ├── Aftermath_load.bik
+│   │   ├── airlift_fade.bik
+│   │   ├── Airlift_load.bik
+│   │   ├── airplane_load.bik
+│   │   ├── ambush_fade.bik
+│   │   ├── Ambush_load.bik
+│   │   ├── armada_fade.bik
+│   │   ├── Armada_load.bik
+│   │   ├── asad_speech_180.bik
+│   │   ├── attract.bik
+│   │   ├── atvi.bik
+│   │   ├── black.bik
+│   │   ├── blackout_fade.bik
+│   │   ├── Blackout_load.bik
+│   │   ├── bog_a_fade.bik
+│   │   ├── bog_a_load.bik
+│   │   ├── bog_b_fade.bik
+│   │   ├── bog_b_load.bik
+│   │   ├── cargoship_fade.bik
+│   │   ├── cargoship_load.bik
+│   │   ├── cod_intro.bik
+│   │   ├── coup_fade.bik
+│   │   ├── coup_load.bik
+│   │   ├── credits_load.bik
+│   │   ├── default.bik
+│   │   ├── dog_vs_player_load.bik
+│   │   ├── hunted_fade.bik
+│   │   ├── hunted_load.bik
+│   │   ├── icbm_fade.bik
+│   │   ├── icbm_load.bik
+│   │   ├── IW_logo.bik
+│   │   ├── jeepride_fade.bik
+│   │   ├── jeepride_load.bik
+│   │   ├── killhouse_fade.bik
+│   │   ├── killhouse_load.bik
+│   │   ├── Killhouse_monitor1.bik
+│   │   ├── launchfacility_a_fade.bik
+│   │   ├── launchfacility_a_load.bik
+│   │   ├── launchfacility_b_fade.bik
+│   │   ├── launchfacility_b_load.bik
+│   │   ├── legal.bik
+│   │   ├── scoutsniper_fade.bik
+│   │   ├── scoutsniper_load.bik
+│   │   ├── simplecredits_load.bik
+│   │   ├── sniperescape_load.bik
+│   │   ├── village_assault_fade.bik
+│   │   ├── village_assault_load.bik
+│   │   ├── village_defend_fade.bik
+│   │   ├── village_defend_load.bik
+│   │   └── zakhaev_escape.bik
+│   ├── xbase_00.iwd
+│   └── xiceops_00.iwd
+├── mods
+│   ├── fps_promod_275
+│   │   ├── fps_promod_275.iwd
+│   │   ├── mod.ff
+│   │   └── z_c_r.iwd
+│   └── pml220
+│       ├── mod.ff
+│       ├── pml220.iwd
+│       └── z_c_r.iwd
+├── plugins
+│   ├── b3hide.so
+│   ├── censor.so
+│   ├── legacybanlist.so
+│   ├── nehoscreenshotuploader.so
+│   ├── pchat.so
+│   ├── simplebanlist.so
+│   ├── sourcebansplugin.so
+│   └── warn.so
+├── server.cfg
+├── usermaps
+│   └── mp_nuketown
+│       ├── mp_nuketown.ff
+│       ├── mp_nuketown.iwd
+│       └── mp_nuketown_load.ff
+└── zone
+    ├── cod4x_patchv2.ff
+    └── english
+        ├── ac130.ff
+        ├── aftermath.ff
+        ├── airlift.ff
+        ├── airplane.ff
+        ├── ambush.ff
+        ├── armada.ff
+        ├── blackout.ff
+        ├── bog_a.ff
+        ├── bog_b.ff
+        ├── cargoship.ff
+        ├── code_post_gfx.ff
+        ├── code_post_gfx_mp.ff
+        ├── common.ff
+        ├── common_mp.ff
+        ├── coup.ff
+        ├── hunted.ff
+        ├── icbm.ff
+        ├── jeepride.ff
+        ├── killhouse.ff
+        ├── launchfacility_a.ff
+        ├── launchfacility_b.ff
+        ├── localized_code_post_gfx_mp.ff
+        ├── localized_common_mp.ff
+        ├── mp_backlot.ff
+        ├── mp_backlot_load.ff
+        ├── mp_bloc.ff
+        ├── mp_bloc_load.ff
+        ├── mp_bog.ff
+        ├── mp_bog_load.ff
+        ├── mp_broadcast.ff
+        ├── mp_broadcast_load.ff
+        ├── mp_carentan.ff
+        ├── mp_carentan_load.ff
+        ├── mp_cargoship.ff
+        ├── mp_cargoship_load.ff
+        ├── mp_citystreets.ff
+        ├── mp_citystreets_load.ff
+        ├── mp_convoy.ff
+        ├── mp_convoy_load.ff
+        ├── mp_countdown.ff
+        ├── mp_countdown_load.ff
+        ├── mp_crash.ff
+        ├── mp_crash_load.ff
+        ├── mp_crash_snow.ff
+        ├── mp_crash_snow_load.ff
+        ├── mp_creek.ff
+        ├── mp_creek_load.ff
+        ├── mp_crossfire.ff
+        ├── mp_crossfire_load.ff
+        ├── mp_farm.ff
+        ├── mp_farm_load.ff
+        ├── mp_killhouse.ff
+        ├── mp_killhouse_load.ff
+        ├── mp_overgrown.ff
+        ├── mp_overgrown_load.ff
+        ├── mp_pipeline.ff
+        ├── mp_pipeline_load.ff
+        ├── mp_shipment.ff
+        ├── mp_shipment_load.ff
+        ├── mp_showdown.ff
+        ├── mp_showdown_load.ff
+        ├── mp_strike.ff
+        ├── mp_strike_load.ff
+        ├── mp_vacant.ff
+        ├── mp_vacant_load.ff
+        ├── scoutsniper.ff
+        ├── simplecredits.ff
+        ├── sniperescape.ff
+        ├── ui.ff
+        ├── ui_mp.ff
+        ├── village_assault.ff
+        └── village_defend.ff
+
+12 directories, 177 files
