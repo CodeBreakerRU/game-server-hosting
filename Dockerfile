@@ -1,18 +1,36 @@
-FROM debian:latest
+FROM debian:bookworm
 
-RUN dpkg --add-architecture i386
-RUN apt-get update -y
-RUN apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 -y
-RUN apt-get install vim nano -y
-RUN useradd cod4
+## VARIABLES
+ENV MAX_PLAYERS=24
+ENV MAIN_SHARED=
+ENV FS_GAME=mods/fps_promod_275
+ENV CONFIG=server.cfg
+ENV ARGS=
 
-ADD cod4 /home/cod4
-ADD usermaps /home/cod4/usermaps
-RUN chown -R cod4:cod4 /home/cod4
+RUN dpkg --add-architecture i386 && \
+    apt-get update && \
+    apt-get install -y lib32stdc++6
 
-USER cod4
-WORKDIR /home/cod4
+RUN apt install ca-certificates -y
 
-ENTRYPOINT ["/home/cod4/cod4x18_dedrun"]
+COPY bin/ cod4x-server
+COPY main/ cod4x-server/main/
+COPY zone/ cod4x-server/zone/
+COPY plugins/ cod4x-server/plugins/
+COPY mods/ cod4x-server/mods/
+COPY usermaps/ cod4x-server/usermaps/
 
-CMD ["+exec server.cfg", "+set logfile 2", "+set fs_basepath /home/cod4/", "+set fs_homepath /home/cod4/", "+set net_port 28960", "+map mp_crossfire", "+set fs_game mods/pml220", "+set promod_mode knockout_mr12", "+set g_logsync 2"]
+RUN chmod +x cod4x-server/cod4x18_dedrun
+RUN groupadd -r cod && useradd --no-log-init -r -g cod cod
+
+RUN chown -R cod:cod cod4x-server
+
+#RUN mkdir cod4x-server/main
+#RUN chown -R cod:cod cod4x-server/main
+
+#VOLUME /cod4x-server-base/main /cod4x-server-base/zone /cod4x-server/plugins /cod4x-server/mods
+EXPOSE 28960
+USER cod
+
+ENTRYPOINT cd cod4x-server && ./cod4x18_dedrun +set net_port 28960 +set g_gametype "sd" +map "mp_crossfire" +set r_xassetnum "xmodel=1200" +set sv_maxclients $MAX_PLAYERS +set fs_homepath "." +set fs_basepath "." +set fs_game "$FS_GAME" +exec "$CONFIG" +set "promod_mode knockout_mr12" $ARGS 
+#ENTRYPOINT /bin/bash
