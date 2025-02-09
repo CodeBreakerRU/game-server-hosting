@@ -32,5 +32,5 @@ RUN chown -R cod:cod cod4x-server
 EXPOSE 28960
 USER cod
 
-ENTRYPOINT cd cod4x-server && ./cod4x18_dedrun +set net_port 28960 +set g_gametype "sd" +map "mp_crossfire" +set r_xassetnum "xmodel=1200" +set sv_maxclients $MAX_PLAYERS +set fs_homepath "." +set fs_basepath "." +set fs_game "$FS_GAME" +exec "$CONFIG" +set "promod_mode knockout_mr12" $ARGS 
+ENTRYPOINT cd cod4x-server && ./cod4x18_dedrun +set net_port 28960 +set g_gametype "sd" +map "mp_crossfire" +set r_xassetnum "xmodel=1200" +set sv_maxclients $MAX_PLAYERS +set fs_homepath "." +set fs_basepath "." +set fs_game "$FS_GAME" +exec "$CONFIG" +set promod_mode "knockout_mr12" $ARGS 
 #ENTRYPOINT /bin/bash
