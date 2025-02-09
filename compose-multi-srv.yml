@@ -1,6 +1,6 @@
 services:
   cod4-server-1:
-    image: docker.dc1.com.ru/cod4x/fps:latest
+    image: docker.rileyghost.com/cod4x/fps:latest
     restart: unless-stopped
     container_name: cod4-server-1
     volumes:
@@ -14,7 +14,7 @@ services:
       - ARGS=+set promod_mode "knockout_mr12" +set logfile 2 +set g_logsync 2 +set g_gametype "sd"
 
   cod4-server-2:
-    image: docker.dc1.com.ru/cod4x/fps:latest
+    image: docker.rileyghost.com/cod4x/fps:latest
     restart: unless-stopped
     container_name: cod4-server-2
     volumes:
