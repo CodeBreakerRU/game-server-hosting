@@ -1,6 +1,6 @@
 services:
   cod4-server-1:
-    image: docker.rileyghost.com/cod4x/base:latest
+    image: registry.rileyghost.com/cod4x/base:latest
     restart: unless-stopped
     container_name: cod4-server-1
     volumes:
@@ -28,7 +28,7 @@ services:
     ]
 
   cod4-server-2:
-    image: docker.rileyghost.com/cod4x/base:latest
+    image: registry.rileyghost.com/cod4x/base:latest
     restart: unless-stopped
     container_name: cod4-server-2
     volumes:

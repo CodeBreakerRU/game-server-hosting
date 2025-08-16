@@ -1,4 +1,4 @@
-FROM debian:bullseye
+FROM debian:trixie
 
 RUN dpkg --add-architecture i386
 RUN apt-get update -y

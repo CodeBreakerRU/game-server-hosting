@@ -1,9 +1,9 @@
-FROM debian:bookworm
+FROM debian:trixie
 
 ## VARIABLES
 ENV MAX_PLAYERS=24
 ENV MAIN_SHARED=
-ENV FS_GAME=mods/fps_promod_275
+ENV FS_GAME=mods/fps_promod_278
 ENV CONFIG=server.cfg
 ENV ARGS=
 
